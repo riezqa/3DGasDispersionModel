@@ -2,8 +2,6 @@
 
 **A Python / Google Colab research and screening tool for atmospheric gas dispersion, gas-mixture properties, release calculations, and preliminary flammability/toxic-exposure screening.**
 
-[Open the notebook](./3D Gas Dispersion Model.ipynb) · [Download the notebook](./3D Gas Dispersion Model.ipynb)
-
 > [!CAUTION]
 > This is a research and screening prototype. It is **not** PHAST, ALOHA, DEGADIS, or a validated replacement for robust consequence-analysis software. Do not use its predictions alone to establish emergency exclusion distances, safety-system design limits, regulatory compliance, or operational emergency-response decisions. Independent validation, scenario-specific source-term assessment, and qualified engineering review are required.
 
