@@ -2,6 +2,8 @@
 
 **A Python / Google Colab research and screening tool for atmospheric gas dispersion, gas-mixture properties, release calculations, and preliminary flammability/toxic-exposure screening.**
 
+[Open the notebook](./3D Gas Dispersion Model.ipynb) · [Download the notebook](./3D Gas Dispersion Model.ipynb)
+
 > [!CAUTION]
 > This is a research and screening prototype. It is **not** PHAST, ALOHA, DEGADIS, or a validated replacement for robust consequence-analysis software. Do not use its predictions alone to establish emergency exclusion distances, safety-system design limits, regulatory compliance, or operational emergency-response decisions. Independent validation, scenario-specific source-term assessment, and qualified engineering review are required.
 
@@ -610,7 +612,7 @@ a_{latest}=\max(t-t_{1,eff},0),\qquad a_{earliest}=\max(t-t_{0,i},0)
 ```
 
 ```math
-G_{x,i}=\frac{1}{2}\left\{\operatorname{erf}\left[\frac{x-U_{eff}a_{latest}}{\sqrt{2}\sigma_x}\right]-\operatorname{erf}\left[\frac{x-U_{eff}a_{earliest}}{\sqrt{2}\sigma_x}\right]\right\}
+G_{x,i}=\frac{1}{2}\left\{\mathrm{erf}\left[\frac{x-U_{eff}a_{latest}}{\sqrt{2}\sigma_x}\right]-\mathrm{erf}\left[\frac{x-U_{eff}a_{earliest}}{\sqrt{2}\sigma_x}\right]\right\}
 ```
 
 The crosswind and vertical kernels are:
@@ -812,7 +814,7 @@ IDLH records whose source basis is 10% LEL (including methane, ethane, propane, 
 The grid is stretched to allocate more points near the source, plume centreline, and ground. Base coordinate transforms are:
 
 ```math
-x_{near}=\operatorname{linspace}(0,x_{ref},n_{near}),\qquad x_{far}=\operatorname{geomspace}(x_{ref},x_{max},n_{far})
+x_{near}=\mathrm{linspace}(0,x_{ref},n_{near}),\qquad x_{far}=\mathrm{geomspace}(x_{ref},x_{max},n_{far})
 ```
 
 ```math
@@ -868,7 +870,7 @@ This is a post-processing approximation for displaying and interrogating the dow
 The profile-derived contaminant mass concentration is converted to contaminant mole fraction using the DEGADISx thermodynamic table. The notebook interpolates mixture density from the package table:
 
 ```math
-\rho=\operatorname{interp}(c_c;\;table.c_c,table.\rho)
+\rho=\mathrm{interp}(c_c;\;table.c_c,table.\rho)
 ```
 
 ```math
