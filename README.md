@@ -1099,15 +1099,6 @@ The following references underpin the equations, software modules, and data sour
 - **ERPG values:** NOAA CAMEO records and referenced emergency-response guidance, as embedded in the database.
 - **Dense-gas model:** [DEGADISx on PyPI](https://pypi.org/project/degadisx/0.1.4/), [DEGADISx source repository](https://github.com/lyullee/degadisx), and the [EPA alternative dispersion models page](https://www.epa.gov/scram/air-quality-dispersion-modeling-alternative-models).
 
-## Repository files
-
-A suggested repository layout is:
-
-```text
-.
-├── README.md
-└── 3D_Gas_Dispersion_Model.ipynb
-```
 
 ## Disclaimer and contribution note
 
